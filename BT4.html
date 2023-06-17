@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="navBar">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./BT1.html">BaiTap1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./BT2.html">Baitap2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./BT3.html">BaiTap3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./BT4.html">BaiTap4</a>
+        </li>
+      </ul>
+    </div>
+    <div class="boder">
+      <form>
+        <h1>Tính hóa đơn khách hàng</h1>
+        <div class="input-group">
+          <label for="customer-type">Chọn loại khách hàng:</label>
+          <select id="customer-type" onchange="handleChangeCustomerType()">
+            <option value="nhadan">Nhà dân</option>
+            <option value="doanhnghiep">Doanh nghiệp</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="customer-code">Mã khách hàng:</label>
+          <input type="text" id="customer-code" />
+        </div>
+        <div class="input-group">
+          <label for="connections">Số kết nối:</label>
+          <input type="number" id="connections" />
+        </div>
+        <div class="input-group">
+          <label for="premium-channels">Số kênh cao cấp:</label>
+          <input type="number" id="premium-channels" />
+        </div>
+        <div class="input-group">
+          <button onclick="calculateBill()">Tính hóa đơn</button>
+        </div>
+        <div id="result" class="result"></div>
+
+        <div id="result"></div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
